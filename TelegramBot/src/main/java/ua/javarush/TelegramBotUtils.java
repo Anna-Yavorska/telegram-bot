@@ -67,7 +67,7 @@ public class TelegramBotUtils {
         try {
             SendPhoto photo = new SendPhoto();
             InputFile inputFile = new InputFile();
-            inputFile.setMedia(Files.newInputStream(Path.of("images/" + name + ".jpg")), name);
+            inputFile.setMedia(Files.newInputStream(Path.of("TelegramBot/images/" + name + ".jpg")), name);
             photo.setPhoto(inputFile);
             photo.setChatId(chatId);
             return photo;
